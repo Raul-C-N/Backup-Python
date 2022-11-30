@@ -10,7 +10,7 @@ from datetime import date
 
 
 # path
-path = 'C:/Users/47889004/Documents/BACKUP DTC'
+path = 'D:/Backup -DTC'
 
 #define a data de hoje
 today = date.today()
@@ -21,7 +21,7 @@ src = 'W:/ATIVOS DE T.I'
 
 
 #Source list
-src_list = ('W:/ATIVOS DE T.I','W:/SOLICITACOES DE ACESSO REMOTO')
+src_list = ('//10.75.37.2/dtc/ATIVOS DE T.I','//10.75.37.2/dtc/SOLICITACOES DE ACESSO REMOTO','//10.75.37.2/47889004')
 sl = src_list
 
 
@@ -29,7 +29,7 @@ sl = src_list
 dest_list_end=[]
 
 for pasta in src_list:
-#    print (pasta)
+    print (pasta)
     print (pasta.strip('W:/'))
     dest_list_end.append(pasta.strip('W:/'))
 #dest_list_end 
